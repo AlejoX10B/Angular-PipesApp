@@ -1,0 +1,68 @@
+<h1>Pipes de Texto</h1>
+<p>Pipes incluidos en Angular - Usualmente en el Common Module</p>
+
+<div class="grid">
+  <div class="col">
+    <p-card header="Uppercase"
+            subheader="alejandro">
+      {{'alejandro' | uppercase}}
+    </p-card>
+  </div>
+
+  <div class="col">
+    <p-card header="Lowercase"
+            subheader="ALEJANDRO">
+      {{'ALEJANDRO' | lowercase}}
+    </p-card>
+  </div>
+
+  <div class="col">
+    <p-card header="Titlecase"
+            subheader="aLeJanDRo">
+      {{'aLeJanDRo' | titlecase}}
+    </p-card>
+  </div>
+</div>
+
+<h1>Pipes de Fecha/Hora</h1>
+<p>Pipes para mostrar las fechas y horas en diferentes formatos</p>
+
+<div class="grid">
+  <div class="col">
+    <p-card>
+      <ul>
+        <li>Fecha original</li>
+        <li>Fecha con pipe | date</li>
+        <li>Fecha con pipe | date:'short'</li>
+        <li>Fecha con pipe | date:'long'</li>
+        <li>Fecha con pipe | date:'MMMM'</li>
+        <li>Fecha con pipe | date:'MMMM dd, yyyy'</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>Fecha con pipe y timezone | date:'long':'GMT+11</li>
+        <li>Fecha con pipe y timezone | date:'long':'GMT-9'</li>
+        <li>Fecha con pipe, timezone y locale | date:'long':'':'ja'</li>
+      </ul>
+    </p-card>
+  </div>
+
+  <div class="col">
+    <p-card>
+      <ul>
+        <li>{{today}}</li>
+        <li>{{today | date}}</li>
+        <li>{{today | date:'short'}}</li>
+        <li>{{today | date:'long'}}</li>
+        <li>{{today | date:'MMMM'}}</li>
+        <li>{{today | date:'MMMM dd, yyyy'}}</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>{{today | date:'long':'GMT+11'}}</li>
+        <li>{{today | date:'long':'GMT-9'}}</li>
+        <li>{{today | date:'long':'':'ja'}}</li>
+      </ul>
+    </p-card>
+  </div>
+</div>
