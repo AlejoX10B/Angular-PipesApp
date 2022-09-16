@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import {PrimeNgModule} from "../prime-ng/prime-ng.module";
+import { PrimeNgModule } from "../prime-ng/prime-ng.module";
 
 import { BasicsComponent } from './pages/basics/basics.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
